@@ -1,0 +1,242 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:'Times New Roman', Times, serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+:root{
+	--bg-color: rgb(246, 246, 246);
+	--text-color: #221314;
+	--second-color: #5a7184;
+	--main-color: #6e54fa;
+	--big-font: 6rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+header{
+	position:fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 18%;
+    background-color:rgb(210, 77, 57);
+}
+.logo{
+	font-size: 3px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: var(--bg-color);
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: var(--bg-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.navbar a:hover{
+	background: var(--bg-color);
+	color: var(--text-color);
+	
+	
+}
+#menu-icon{
+	color: var(--bg-color);
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section{
+	padding: 80px 18%;
+}
+.home{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(mou.png);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+}
+.home-text h1{
+	font-size: var(--big-font);
+	line-height: 1.2;
+	color: var(--bg-color);
+	font-family:'Times New Roman', Times, serifs;
+	letter-spacing: 4px;
+	margin-bottom: 12px;
+    
+}
+.home-text p{
+	color: #ffffffbf;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 38px;
+	margin-bottom: 50px;
+}
+.home-btn{
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px 30px;
+	background: rgb(210, 77, 57);
+	color: var(--main-color);
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.home-btn:hover{
+	background: var(--bg-color);
+	transform: scale(1.1);
+}
+
+
+.text h2{
+	font-size: var(--h2-font);
+	line-height: 1.1;
+}
+.row-items{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	text-align: center;
+	margin-top: 5rem;
+}
+.home .container-box {
+	background: var(--bg-color);
+	border: 1px solid #f0eded;
+	padding: 50px 10px;
+	border-radius: 4px;
+	
+	cursor: pointer;
+}
+
+.container-box h4{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.container-box p{
+	font-size: 15px;
+	color: var(--second-color);
+}
+.menu .heading
+{
+    text-align: center;
+    color:rgb(223, 99, 118);
+}
+    
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 10fr));
+    gap:2rem;
+}
+
+.menu .box-container .box{
+    padding:2rem;
+    text-align: center;
+    border:var(--border);    
+}
+
+.menu .box-container .box img{
+    height: 15rem;
+    width: 20rem;
+}
+
+.menu .box-container .box h2{
+    color: rgb(54, 118, 208);
+    font-size: 2rem;
+    
+    padding:2rem 0;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.7rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background:rgb(210, 77, 57);
+    cursor: pointer;
+}
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:rgb(241, 172, 162);
+};
+
+
+.menu .box-container .box:hover > *{
+    color:var(--black);
+}
+
+.title{
+	text-align: center;
+}
+.title h2{
+	font-size: var(--h2-font);
+	line-height: 1.2;
+}
+
+.video-container {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    left:100px;
+
+}
+.video-container video{
+    width: 400px;
+}
+.audio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+
+.end-text{
+    
+	bottom: 0;
+	right:100%;
+	width: 90%;
+    
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 18%;
+    background-color:rgb(230, 156, 167);
+};
